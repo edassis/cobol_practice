@@ -6,12 +6,12 @@
         {
             "label": "Compile and Run",
             "type": "shell",
-            "command": "cobc -x src/${fileBasenameNoExtension}.cbl -o bin/${fileBasenameNoExtension} && ./bin/${fileBasenameNoExtension}",
+            "command": "cobc -x src/${fileBasenameNoExtension}.cbl -o bin/${fileBasenameNoExtension}",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
         }
     ]
 }

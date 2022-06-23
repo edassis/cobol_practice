@@ -1,0 +1,9 @@
+{
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMapByGlob": {
+        // "*.cbl": "cd $workspaceRoot && cobc -x src/$fileName -o bin/$fileNameWithoutExt && xterm -hold ./bin/$fileNameWithoutExt"
+        "*.cbl": "cd $workspaceRoot && cobc -x src/$fileName -o bin/$fileNameWithoutExt && ./bin/$fileNameWithoutExt"
+    }
+
+}

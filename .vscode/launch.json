@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "cobol",
+            "request": "launch",
+            "name": "COBOL: Launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true,
+            // "preLaunchTask": "Compile and Run",
+            // "console": "externalTerminal",
+        },
+        {
+            "type": "cobol",
+            "request": "attach",
+            "name": "COBOL: Attach to process",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
