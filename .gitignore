@@ -1,0 +1,3 @@
+bin/
+.vscode/*
+!.vscode/tasks.json
