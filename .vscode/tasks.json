@@ -6,7 +6,7 @@
         {
             "label": "Compile and Run",
             "type": "shell",
-            "command": "cobc -x src/${fileBasenameNoExtension}.cbl -o bin/${fileBasenameNoExtension}",
+            "command": "cobc -x SRC/${fileBasenameNoExtension}.cbl -o BIN/${fileBasenameNoExtension}",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

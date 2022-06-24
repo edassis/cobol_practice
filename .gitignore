@@ -1,6 +1,13 @@
-bin/
+BIN/
+TMP/
+
 .vscode/*
 !.vscode/tasks.json
 !.vscode/settings.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+*.c
+*.h
+*.i
+*.RPT

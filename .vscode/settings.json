@@ -1,9 +1,38 @@
-{
+{   
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.runInTerminal": true,
     "code-runner.executorMapByGlob": {
         // "*.cbl": "cd $workspaceRoot && cobc -x src/$fileName -o bin/$fileNameWithoutExt && xterm -hold ./bin/$fileNameWithoutExt"
-        "*.cbl": "cd $workspaceRoot && cobc -x src/$fileName -o bin/$fileNameWithoutExt && ./bin/$fileNameWithoutExt"
-    }
-
+        "*.cbl": "cobc -x -fixed -g -Wall SRC/$fileName -o BIN/$fileNameWithoutExt && ./BIN/$fileNameWithoutExt"
+    },
+    
+    // TERMINAL
+    // "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "MSYS2": {
+            "path": "C:\\Users\\F2731623\\scoop\\apps\\msys2\\current\\usr\\bin\\bash.exe",
+            "args": ["--login", "-i"],
+        }
+    },
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        // "MSYS2_PATH_TYPE": "inherit",
+        // "MSVSCODE": "1",
+        "CHERE_INVOKING": "1",
+    },
 }
